@@ -12,7 +12,7 @@ export default function PostsSection({ showAll = false }) {  // <- новый п
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/updates/`)
+    axios.get(`${API_BASE_URL}/posts/`)
       .then(response => {
         setPosts(response.data);
         setLoading(false);

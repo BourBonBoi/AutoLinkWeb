@@ -8,7 +8,7 @@ export default function UpdatesList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/posts/`)
+    axios.get(`${API_BASE_URL}/updates/`)
       .then(res => {
         console.log('Response data:', res.data);
         setUpdates(res.data);
