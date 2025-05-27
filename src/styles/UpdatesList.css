@@ -1,0 +1,61 @@
+.updates-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.updates-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 8px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.no-updates {
+  font-style: italic;
+  text-align: center;
+  color: #777;
+}
+
+.update-card {
+  background-color: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.update-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.update-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.update-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
