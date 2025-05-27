@@ -59,3 +59,46 @@
   line-height: 1.6;
   color: #555;
 }
+@media (max-width: 768px) {
+  .updates-title {
+    font-size: 2rem;
+    padding-bottom: 6px;
+  }
+
+  .update-card {
+    padding: 18px 20px;
+  }
+
+  .update-title {
+    font-size: 1.3rem;
+  }
+
+  .update-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .updates-container {
+    padding: 0 15px;
+  }
+
+  .updates-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .update-title {
+    font-size: 1.2rem;
+  }
+
+  .update-date {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .update-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
