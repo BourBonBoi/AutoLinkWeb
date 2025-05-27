@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom' 
 import axios from 'axios';
 import '../styles/PostSection.css';
+import { API_BASE_URL } from '../config';
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400?text=тут+нет+картинки';
 
@@ -11,7 +12,7 @@ export default function PostsSection({ showAll = false }) {  // <- новый п
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/posts/')
+    axios.get(`${API_BASE_URL}/updates/`)
       .then(response => {
         setPosts(response.data);
         setLoading(false);

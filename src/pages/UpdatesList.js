@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/UpdatesList.css';
+import { API_BASE_URL } from '../config';
 
 export default function UpdatesList() {
   const [updates, setUpdates] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/updates/')
+    axios.get(`${API_BASE_URL}/posts/`)
       .then(res => {
         setUpdates(res.data);
         setLoading(false);
