@@ -10,6 +10,7 @@ export default function UpdatesList() {
   useEffect(() => {
     axios.get(`${API_BASE_URL}/posts/`)
       .then(res => {
+        console.log('Response data:', res.data);
         setUpdates(res.data);
         setLoading(false);
       })
@@ -18,6 +19,7 @@ export default function UpdatesList() {
         setLoading(false);
       });
   }, []);
+
 
   if (loading) return <p className="loading">Загрузка обновлений...</p>;
 

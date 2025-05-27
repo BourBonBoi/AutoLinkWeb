@@ -25,10 +25,8 @@ export default function PostsSection({ showAll = false }) {  // <- новый п
 
   if (loading) return <p className="loading">Загрузка...</p>;
 
-  // Создаём копию массива posts и разворачиваем её в обратном порядке
   const reversedPosts = [...posts].reverse();
 
-  // Показываем все посты в обратном порядке
   const displayedPosts = showAll ? reversedPosts : reversedPosts.slice(0, 4);
 
   return (
@@ -41,7 +39,7 @@ export default function PostsSection({ showAll = false }) {  // <- новый п
           <div className="post-item" key={post.id}>
             <div className="post-image-wrapper">
               <img
-                src={post.image ? `http://127.0.0.1:8000${post.image}` : PLACEHOLDER_IMAGE}
+                src={post.image ? `${API_BASE_URL}${post.image}` : PLACEHOLDER_IMAGE}
                 alt={post.title}
                 className="post-image"
               />
